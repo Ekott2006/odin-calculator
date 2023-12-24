@@ -8,7 +8,7 @@ for (const key of KEYS) {
     const button = document.createElement("button");
     button.innerHTML = keyName[0];
     button.className = keyName[1];
-    button.onclick = () => addUserInput(keyName);
+    button.onclick = () => addUserInput(keyName[0]);
     div.appendChild(button);
   }
   CONTROLS.appendChild(div);
